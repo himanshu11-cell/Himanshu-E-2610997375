@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Places in India</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: white;
+            line-height: 1.7;
+            background:
+                linear-gradient(rgba(5, 15, 30, 0.76),
+                                rgba(5, 15, 30, 0.88)),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=85")
+                center/cover fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 153, 51, 0.9),
+                rgba(150, 50, 40, 0.75),
+                rgba(19, 136, 8, 0.8)
+            );
+        }
+
+        header h1 {
+            font-size: clamp(32px, 5vw, 54px);
+            text-shadow: 2px 3px 8px #222;
+            line-height: 1.3;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 12px;
+        }
+
+        main {
+            max-width: 1150px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: rgba(3, 23, 39, 0.82);
+            border: 1px solid rgba(255, 210, 125, 0.65);
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #ffd27d;
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            color: #ffd27d;
+            margin: 12px 0 5px;
+        }
+
+        .states-list {
+            padding-left: 28px;
+        }
+
+        .states-list > li {
+            margin: 16px 0;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .states-list ul {
+            padding-left: 27px;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .devotional {
+            background: rgba(255, 193, 77, 0.09);
+            border-left: 4px solid #ffbf47;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-top: 15px;
+            color: #fff0c2;
+            font-style: italic;
+        }
+
+        .devotional strong {
+            display: block;
+            color: #ffd27d;
+            margin-bottom: 5px;
+            font-style: normal;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .place-card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 210, 125, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .place-card h3,
+        .place-card p {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .place-card p {
+            padding-bottom: 18px;
+            font-size: 15px;
+        }
+
+        .quote {
+            text-align: center;
+            color: #ffe2a0;
+            font-size: 19px;
+            font-style: italic;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        footer h2 {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 12px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header {
+                padding: 45px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Favorite Places in India</h1>
+    <p>Different States • Divine Places • One Incredible India</p>
+    <p>🙏 NAND KE LALA KI JAI HO 🙏</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>🌍 Introduction</h2>
+
+        <p>
+            India is a land of incredible beauty, spirituality, history
+            and diverse cultures. Travelling across India feels like
+            discovering a new world, from the snow-covered Himalayas
+            to the sacred temples of Uttar Pradesh and the peaceful
+            valleys of Jammu. Every destination has a unique story,
+            its own traditions and unforgettable experiences.
+            Travelling teaches us about our heritage, brings us closer
+            to nature and allows us to experience the devotion and
+            hospitality that make India truly special.
+        </p>
+    </section>
+
+    <section>
+        <h2>📍 My Five Favorite States and Regions</h2>
+
+        <ul class="states-list">
+
+            <li>Uttar Pradesh
+                <ul>
+                    <li>Vrindavan</li>
+                    <li>Barsana</li>
+                    <li>Mathura</li>
+                </ul>
+            </li>
+
+            <li>Himachal Pradesh
+                <ul>
+                    <li>Manali</li>
+                    <li>Shimla</li>
+                </ul>
+            </li>
+
+            <li>Rajasthan
+                <ul>
+                    <li>Jaipur</li>
+                    <li>Udaipur</li>
+                </ul>
+            </li>
+
+            <li>Uttarakhand
+                <ul>
+                    <li>Nainital</li>
+                    <li>Mussoorie</li>
+                </ul>
+            </li>
+
+            <li>Jammu (Jammu and Kashmir)
+                <ul>
+                    <li>Shri Mata Vaishno Devi Temple</li>
+                    <li>Patnitop</li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>🪷 Special Devotional Lines</h2>
+
+        <div class="devotional">
+            <strong>🙏 Uttar Pradesh — Braj Bhoomi</strong>
+            "Radhe Radhe" is not just a greeting; it is an expression
+            of love, faith and devotion.
+
+            <br><br>
+
+            In Vrindavan, every lane echoes the name of Shri Krishna.
+            Barsana is blessed by the divine love of Radha Rani,
+            while Mathura is celebrated as the birthplace of Lord Krishna.
+
+            <br><br>
+
+            May Radha Rani's grace fill every heart with love,
+            Shri Krishna's wisdom guide every step, and devotion
+            bring peace to every soul.
+
+            <br><br>
+            <strong>राधे राधे! जय श्री कृष्ण! 🦚</strong>
+        </div>
+
+        <div class="devotional">
+            <strong>🙏 Jammu — Shri Mata Vaishno Devi</strong>
+            "Jai Mata Di" is a prayer of faith, courage and surrender
+            to the Divine Mother.
+
+            <br><br>
+
+            The sacred journey to Vaishno Devi reminds devotees that
+            faith gives strength, prayer brings hope, and a sincere
+            heart finds peace in the Mother's blessings.
+
+            <br><br>
+            <strong>जय माता दी! माता रानी सब पर कृपा बनाए रखें। 🪔</strong>
+        </div>
+
+        <div class="devotional">
+            <strong>🏔️ A Thought for Every Traveller</strong>
+            "May every journey bring new wisdom, every sacred place
+            bring inner peace, and every step bring us closer to
+            gratitude, kindness and the Divine."
+        </div>
+    </section>
+
+    <section>
+        <h2>📸 Beautiful Tourist Destinations</h2>
+
+        <div class="gallery">
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?auto=format&fit=crop&w=800&q=85"
+                    alt="Beautiful temple architecture in Vrindavan"
+                    width="800"
+                    height="500">
+                <h3>🪷 Vrindavan</h3>
+                <p>
+                    A sacred town associated with the divine pastimes
+                    of Shri Krishna, filled with temples, bhajans
+                    and devotion.
+                </p>
+            </div>
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=800&q=85"
+                    alt="Colorful Indian temple and traditional architecture"
+                    width="800"
+                    height="500">
+                <h3>🌸 Barsana</h3>
+                <p>
+                    The beloved land of Radha Rani, known for its
+                    sacred temples, spiritual atmosphere and
+                    celebrations of Lathmar Holi.
+                </p>
+            </div>
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?auto=format&fit=crop&w=800&q=85"
+                    alt="Historic Indian temple architecture in Mathura"
+                    width="800"
+                    height="500">
+                <h3>🦚 Mathura</h3>
+                <p>
+                    Revered as the birthplace of Lord Krishna,
+                    Mathura is a major destination for pilgrims
+                    and lovers of Indian heritage.
+                </p>
+            </div>
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=85"
+                    alt="Snow-covered Himalayan mountains near Manali"
+                    width="800"
+                    height="500">
+                <h3>🏔️ Manali</h3>
+                <p>
+                    A breathtaking mountain destination famous
+                    for snow-covered peaks, green valleys and
+                    fresh mountain air.
+                </p>
+            </div>
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=85"
+                    alt="Mountain scenery in Jammu and Kashmir"
+                    width="800"
+                    height="500">
+                <h3>🙏 Vaishno Devi, Jammu</h3>
+                <p>
+                    A sacred pilgrimage in the Trikuta Hills,
+                    where devotees journey with faith and
+                    seek the blessings of Mata Rani.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>❤️ Why I Love Travelling</h2>
+
+        <p>
+            I love travelling because it connects me with nature,
+            history, culture and spirituality. My dream is to visit
+            the sacred land of Braj, seek the blessings of Radha Rani,
+            Shri Krishna and Mata Vaishno Devi, and explore the
+            beautiful mountains and royal cities of India.
+            These journeys remind me that India is not only a country
+            to explore, but also a feeling to experience.
+        </p>
+
+        <p class="quote">
+            "Where devotion meets beauty, every journey becomes a blessing."
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <h2>✨ Incredible India ✨</h2>
+    <p>Unity in Diversity • Faith in Every Journey</p>
+    <p>🪷 Radhe Radhe | जय श्री कृष्ण | जय माता दी 🪷</p>
+</footer>
+
+</body>
+</html>
